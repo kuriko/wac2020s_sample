@@ -37,12 +37,12 @@ function createCards(cardPattern) {
                         setTimeout(() => {
                             alert('あたり！');
                             location.reload();
-                        },400);
+                        },300);
                     }else {
                         setTimeout(() => {
                             alert('はずれ！');
                             location.reload();
-                        },400);
+                        },300);
                     }
                 }
         }
