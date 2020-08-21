@@ -28,7 +28,7 @@ function createCards(cardPattern) {
         // カードをクリックしたら裏面用スタイルを外すイベントを設定
         card.onclick = (e) => {
             e.target.classList.remove("facedown");
-            
+            e.target.onclick = ""; // 同じカードをめくれなくする為にonclick削除
             //クリックした絵柄を配列にプッシュ
             clicked_cards.push(e.target.style.backgroundImage);
                 //配列の値が２つ以上になったら比較して結果を反映。そしてページ更新。
